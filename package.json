@@ -1,9 +1,9 @@
 {
-  "name": "project9",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/LufasuXD/9reactchoet",
+  "homepage": "https://github.com/nattaphatkingjak0408/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
