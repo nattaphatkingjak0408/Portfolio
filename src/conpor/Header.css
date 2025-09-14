@@ -1,0 +1,323 @@
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    z-index: 1;
+    width: 100%; 
+    
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+
+  .logo {
+    width: 100px;
+    float: right;    
+  }
+
+  .logoleft {
+    text-align: right;  /* เปลี่ยนจาก left เป็น right */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.5s;
+    margin-left: auto;  /* เพิ่ม margin-left: auto เพื่อให้ย้ายไปขวา */
+  }
+  .logoleft:hover {
+    color: #ff0000;  /* เปลี่ยนสีเมื่อชี้ไปที่ลิงก์ */
+    transform: scale(1.1);  /* ขยายขนาดข้อความเล็กน้อย */
+  }
+  
+  .header-logo {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  
+  .header-menu {
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+    
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu-item:hover {
+    color: gray;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .headerEX{
+    display: flex;
+    justify-content: center;  /* จัดให้ไอคอนอยู่ตรงกลาง */
+    align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางในแนวตั้ง */
+    margin-left: auto;
+  }
+  .headerShop{
+      display: flex;
+      justify-content: center;  /* จัดให้ไอคอนอยู่ตรงกลาง */
+      align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางในแนวตั้ง */
+      margin-left: 20px;
+  }
+  .icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;  /* จัดให้ไอคอนอยู่ตรงกลาง */
+    align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางในแนวตั้ง */
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .Search {
+    width: 15%;
+  }
+  .shop {
+    width: 300%;
+  }
+.GOGO {
+    width: 20px;
+    justify-content: center;  /* จัดให้ไอคอนอยู่ตรงกลาง */
+    align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางในแนวตั้ง */
+}
+.GOGO1 {
+    width: 25px;
+    justify-content: center;  /* จัดให้ไอคอนอยู่ตรงกลาง */
+    align-items: center; /* จัดให้ไอคอนอยู่ตรงกลางในแนวตั้ง */
+}
+.input {
+  width: 30px;
+  max-width: 270px;
+  height: 5px;
+  padding: 12px;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  color: #000;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.input:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #000;
+}
+
+.input:focus {
+  background-color: #000;
+  color: #fff;
+  border-color: #ffffff;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.input:focus::after {
+  content: "|";
+  position: absolute;
+  right: 10px;
+  animation: blink 0.7s step-end infinite;
+}
+
+.input:valid {
+  animation: typing 2s steps(30, end);
+}
+.input-container {
+  position: relative;
+  width: 10px;
+  max-width: 10px;
+}
+
+.input {
+  width: 150px;
+  height: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  color: #000;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.input:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #000;
+}
+
+.input:focus {
+  background-color: #010101;
+  color: #fff;
+  border-color: #d6d9dd;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(-5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.input:focus {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.input:not(:placeholder-shown) {
+  animation: glitch 1s linear infinite;
+}
+
+.input-container::after {
+  content: "|";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.input:focus + .input-container::after {
+  color: #fff;
+}
+
+.input:not(:placeholder-shown) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 0 #000;
+}
+
+
+
+
+
+  

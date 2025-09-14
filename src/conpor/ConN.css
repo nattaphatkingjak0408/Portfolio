@@ -1,0 +1,79 @@
+.products-container {
+    color: #ffffff;
+    padding: 3%;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 4%;
+    font-size: 2vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* ทำให้ข้อความดูน่าสนใจขึ้น */
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ที่สวยงาม */
+  }
+  
+  .products-container h3 {
+    font-size: 1.75rem;
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff; /* เพิ่มสีฟ้าที่ดึงดูดสายตา */
+    text-transform: uppercase; /* ทำให้ข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+    letter-spacing: 1px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.6s ease; /* เพิ่มการเคลื่อนไหวเมื่อเม้าชี้ไป */
+  }
+
+  /* ทำให้หัวข้อเมื่อเม้าชี้มีสีที่เปลี่ยน */
+.products-container h3:hover {
+    color: #db2a0b; /* เปลี่ยนสีข้อความเป็นสีส้ม */
+    transform: scale(1.1); /* เพิ่มขนาดเล็กน้อย */
+}
+  .products-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+  }
+  .products-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%;
+    justify-items: center;
+    
+  }
+  
+  .product-card {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 101%;
+    height: 101%;
+    border-radius: 10px;
+  }
+  
+  .product-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* ให้ข้อความมีเงา */
+    transition: color 0.6s ease; 
+  }
+  
+  .product-info p {
+    font-size: 1rem;
+    color: #dddddd;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease;
+  }
+  .product-info h3:hover {
+    color: #ff1e00;
+  }
+  
+  
